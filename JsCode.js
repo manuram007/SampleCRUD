@@ -215,6 +215,8 @@
              multiId.push(row.cells[1].innerHTML);
          }
      }
+     $('.case').prop('checked', false);
+     Edit();
      var ans = confirm("Are you sure you want to delete Record(s)?");  
      var tempval=false;
      for(var j=0;j<multiId.length;j++){
