@@ -146,6 +146,7 @@
                       
      }
      function SubmitRequest(){
+
       var title=$("#title").val();
          var body=$("#body").val();
       var data = { title: title, body: body,id:id,userId: 1 };
@@ -157,6 +158,8 @@
                
               type="PUT";
               Alertmessage="Record updated successful";
+               $("#Edit").prop("disabled", true);
+               $("#Delete").prop("disabled", true);
        }
        else{
         url="https://jsonplaceholder.typicode.com/posts/";
